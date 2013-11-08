@@ -1,0 +1,7 @@
+﻿<Placement>
+    <Place Parts_Disqus="Content:20" />
+
+    <Match DisplayType="SummaryAdmin">
+        <Place Parts_Disqus="-"/>
+    </Match>
+</Placement>

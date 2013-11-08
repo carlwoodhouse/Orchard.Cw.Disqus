@@ -1,0 +1,11 @@
+Name: Orchard.Cw.Disqus
+AntiForgery: enabled
+Author: Carl Woodhouse
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.6
+Description: disqus comments
+Features:
+    Orchard.Cw.Disqus:
+        Description: disqus comments
+		Category: Orchard.Cw
