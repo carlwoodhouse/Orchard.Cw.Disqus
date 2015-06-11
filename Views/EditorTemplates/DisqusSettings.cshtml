@@ -1,33 +1,15 @@
-﻿@using Orchard.Cw.FeedReader.Models
-@model RemoteRssPart
+﻿@model Orchard.Cw.Disqus.Models.DisqusSettingsPart
 
 <fieldset>
-  <legend>Remote RSS Feed</legend>
+  <legend>Disqus</legend>
             
   <div class="editor-label">
-    @Html.LabelFor(model => model.RemoteRssUrl, T("Remote RSS Url"))
+    @Html.LabelFor(model => model.Shortname, T("Disqus Shortname"))
   </div>
   <div class="editor-field">
-    @Html.TextBoxFor(model => model.RemoteRssUrl)
-    @Html.ValidationMessageFor(model => model.RemoteRssUrl)
+    @Html.TextBoxFor(model => model.Shortname)
+    @Html.ValidationMessageFor(model => model.Shortname)
   </div>
-  <span class="hint">@T("The URL of a remote RSS or Atom feed. You may need to override Views/Parts/RemoteRss.cshtml, depending on the form of the particular feed you are displaying.")</span>
-            
-  <div class="editor-label">
-    @Html.LabelFor(model => model.ItemsToDisplay, T("Number of Items"))
-  </div>
-  <div class="editor-field">
-    @Html.TextBoxFor(model => model.ItemsToDisplay)
-    @Html.ValidationMessageFor(model => model.ItemsToDisplay)
-  </div>
-  <span class="hint">@T("The number of feed items to display. If this is set to more than what the feed returns, then less than that number will be displayed.")</span>
-            
-  <div class="editor-label">
-    @Html.LabelFor(model => model.CacheDuration, T("Cache Duration"))
-  </div>
-  <div class="editor-field">
-    @Html.TextBoxFor(model => model.CacheDuration)
-    @Html.ValidationMessageFor(model => model.CacheDuration)
-  </div>
-  <span class="hint">@T("The number of minutes the site waits before attempting to refresh the feed from live data.")</span>
+  <span class="hint">@T("The shortname given to you by disqus, associated with your account and website.")</span>
+
 </fieldset>
