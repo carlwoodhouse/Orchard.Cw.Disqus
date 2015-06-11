@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Orchard.Cw.Disqus.Models
 {
-    public class DisqusSettingsPart : ContentPart<DisqusSettingsPart>
+    public class DisqusSettingsPart : ContentPart
     {
         [Required, DisplayName("Your disqus shortname")]
         public string Shortname 

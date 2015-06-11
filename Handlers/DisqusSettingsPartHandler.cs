@@ -1,5 +1,6 @@
 ﻿using Orchard.ContentManagement;
 using Orchard.ContentManagement.Handlers;
+using Orchard.Cw.Disqus.Models;
 using Orchard.Localization;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace Orchard.Cw.Disqus.Handlers
 
         public DisqusSettingsPartHandler()
         {
+            this.Filters.Add(new ActivatingFilter<DisqusSettingsPart>("Site"));
             this.T = NullLocalizer.Instance;
         }
 
