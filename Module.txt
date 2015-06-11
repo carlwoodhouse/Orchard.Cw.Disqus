@@ -1,11 +1,11 @@
 Name: Orchard.Cw.Disqus
 AntiForgery: enabled
 Author: Carl Woodhouse
-Website: http://orchardproject.net
-Version: 1.0
-OrchardVersion: 1.6
+Website: http://carlwoodhouse.com
+Version: 2.0
+OrchardVersion: 1.9.0
 Description: disqus comments
 Features:
     Orchard.Cw.Disqus:
-        Description: disqus comments
-		Category: Orchard.Cw
+        Description: disqus comments, now with the ability to set the disqus shortname in settings 
+		Category: Social

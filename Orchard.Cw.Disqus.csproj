@@ -102,13 +102,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Drivers\DisqusPartDriver.cs" />
+    <Compile Include="Drivers\DisqusSettingsPartDriver.cs" />
+    <Compile Include="Handlers\DisqusSettingsPartHandler.cs" />
     <Compile Include="Migrations.cs" />
     <Compile Include="Models\DisqusPart.cs" />
+    <Compile Include="Models\DisqusSettingsPart.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Placement.info" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\EditorTemplates\DisqusSettings.cshtml" />
     <None Include="Views\Parts.Disqus.cshtml" />
   </ItemGroup>
   <ItemGroup>

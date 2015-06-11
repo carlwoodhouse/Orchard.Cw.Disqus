@@ -7,4 +7,6 @@
     <Match DisplayType="SummaryAdmin">
         <Place Parts_Disqus="-"/>
     </Match>
+
+  <Place Parts_DisqusSettings="Content:1"/>
 </Placement>
