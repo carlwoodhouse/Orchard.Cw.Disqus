@@ -1,15 +1,11 @@
 ﻿@model Orchard.Cw.Disqus.Models.DisqusSettingsPart
 
 <fieldset>
-  <legend>Disqus</legend>
-            
-  <div class="editor-label">
-    @Html.LabelFor(model => model.Shortname, T("Disqus Shortname"))
-  </div>
-  <div class="editor-field">
-    @Html.TextBoxFor(model => model.Shortname)
-    @Html.ValidationMessageFor(model => model.Shortname)
-  </div>
-  <span class="hint">@T("The shortname given to you by disqus, associated with your account and website.")</span>
-
+    <legend>Disqus</legend>
+    <div>
+        @Html.LabelFor(model => model.Shortname, T("Disqus Shortname"))
+        @Html.EditorFor(model => model.Shortname)
+        @Html.ValidationMessageFor(model => model.Shortname)
+        <span class="hint">@T("The shortname gassociated with your disqus account and website.")</span>
+    </div>
 </fieldset>

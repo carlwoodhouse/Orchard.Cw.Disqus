@@ -1,24 +1,21 @@
 ﻿using Orchard.ContentManagement;
 using Orchard.ContentManagement.Drivers;
-using Orchard.ContentManagement.Handlers;
 using Orchard.Cw.Disqus.Models;
 
-namespace Orchard.Cw.Disqus.Drivers
-{
+namespace Orchard.Cw.Disqus.Drivers {
     public class DisqusPartDriver : ContentPartDriver<DisqusPart>
     {
-        private readonly IOrchardServices orchardServices;
+        private readonly IOrchardServices _orchardServices;
 
         public DisqusPartDriver(IOrchardServices orchardServices)
         {
-            this.orchardServices = orchardServices;
+            _orchardServices = orchardServices;
         }
 
         protected override DriverResult Display(DisqusPart part, string displayType, dynamic shapeHelper)
         {
-            return this.ContentShape("Parts_Disqus", () => {
-                var settings = this.orchardServices.WorkContext.CurrentSite.As<DisqusSettingsPart>();
-                return shapeHelper.Parts_Disqus(Shortname : settings.Shortname);
+            return ContentShape("Parts_Disqus", () => {
+                return shapeHelper.Parts_Disqus(Shortname : _orchardServices.WorkContext.CurrentSite.As<DisqusSettingsPart>().Shortname);
             });
         }
     }
