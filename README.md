@@ -1,8 +1,13 @@
 Orchard.Cw.Disqus
 =================
 
-This Orchard module enables you to integrate Disqus. The latest version is compatible with Orchard 1.9.0+ only, older version should work with 1.7.1 - 1.82
+This Orchard module enables you to integrate with the Disqus comments system. 
+The latest version is compatible with Orchard 1.10+ only, for older versions checkout the release history.
 
-The new version allows you to set your disqus shortname in the admin settings, this is stored in infoset for performance reasons.
+##Features
+* Attachable DisqusPart to add disqus comments to any content type
+* Admin Settings for setting your disqus account shortname
 
-enjoy!
+## Authors
+
+* [Carl Woodhouse](https://github.com/carlwoodhouse)
