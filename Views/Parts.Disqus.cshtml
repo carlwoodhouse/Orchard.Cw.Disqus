@@ -3,7 +3,7 @@
     var pageUrl = string.Concat(WorkContext.CurrentSite.BaseUrl, Url.ItemDisplayUrl((IContent)Model.ContentItem));
  }
 
-<h2>Comments</h2>
+<h2>@T("Comments")</h2>
 <div id="disqus_thread"></div>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 @using(Script.Foot()) { 
@@ -23,5 +23,3 @@
         })();
     </script>
 }
-
-@Model.ContentItem.Id
