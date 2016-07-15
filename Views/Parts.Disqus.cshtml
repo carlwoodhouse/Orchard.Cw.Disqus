@@ -1,8 +1,18 @@
-﻿<h2>Comments</h2>
+﻿@using Orchard.ContentManagement
+@{ 
+    var pageUrl = string.Concat(WorkContext.CurrentSite.BaseUrl, Url.ItemDisplayUrl((IContent)Model.ContentItem));
+ }
+
+<h2>Comments</h2>
 <div id="disqus_thread"></div>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 @using(Script.Foot()) { 
     <script>
+        var disqus_config = function () {
+            this.page.url = '@pageUrl'  
+            this.page.identifier = '@Model.ContentItem.Id'
+        };
+
         (function() {  
             var d = document, s = d.createElement('script');
             var sn = '@Model.Shortname';
@@ -13,3 +23,5 @@
         })();
     </script>
 }
+
+@Model.ContentItem.Id
