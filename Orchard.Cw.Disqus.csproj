@@ -43,7 +43,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -104,7 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\EditorTemplates\DisqusSettings.cshtml" />
-    <None Include="Views\Parts.Disqus.cshtml" />
+    <Content Include="Views\Parts.Disqus.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
@@ -157,7 +157,7 @@
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
-         <WebProjectProperties>
+        <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52475</DevelopmentServerPort>
