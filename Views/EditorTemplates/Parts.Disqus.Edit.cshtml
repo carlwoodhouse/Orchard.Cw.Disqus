@@ -1,0 +1,6 @@
+﻿@model Orchard.Cw.Disqus.Models.DisqusPart
+
+<fieldset>
+    @Html.EditorFor(m => m.Hide)
+    <label class="forcheckbox" for="@Html.FieldIdFor(m => m.Hide)">@T("Hide Disqus comments")</label> 
+</fieldset>
